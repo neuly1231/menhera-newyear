@@ -13,8 +13,8 @@ const ingredients = [
     { provider: "숙희", name: "취두부", img: "취두부.png", comment: "결국 왔나……" },
     { provider: "도기", name: "투썸 아이스박스", img: "아박.png", comment: "달콤해지겠네요……" },
     { provider: "죽순", name: "민트초코라면", img: "민초라면.png", comment: "속이 안 좋아졌어요" },
-    { provider: "희정 (2트)", name: "기린", img: "기린.png", comment: "이 황당함을 이루 말할 수가 없다" }
-
+    { provider: "희정 (2트)", name: "기린", img: "기린.png", comment: "이 황당함을 이루 말할 수가 없다" },
+    { provider: "지운", name: "번데기", img: "번데기.png", comment: "징그러워징그러워" }
 ];
 
 let currentIndex = 0;
@@ -98,3 +98,4 @@ function goToResultPage() {
 
 
 loadIngredient();
+
