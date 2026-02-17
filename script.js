@@ -33,9 +33,9 @@ function updateSoup(index) {
     const heightPercent = (index / ingredients.length) * 100;
     soup.style.height = heightPercent + "%";
 
-    if (index < 3) soup.style.backgroundColor = "#ffffff"; 
-    else if (index < 6) soup.style.backgroundColor = "#8a2be2"; 
-    else if (index < 9) soup.style.backgroundColor = "#5d3a1a"; 
+    if (index < 4) soup.style.backgroundColor = "#ffffff"; 
+    else if (index < 7) soup.style.backgroundColor = "#8a2be2"; 
+    else if (index < 10) soup.style.backgroundColor = "#5d3a1a"; 
     else soup.style.backgroundColor = "#111111"; 
 }
 
@@ -78,7 +78,7 @@ function startBoilingEffect() {
 
     setTimeout(() => {
         goToResultPage();
-    }, 6000);
+    }, 5000);
 }
 
 function goToResultPage() {
