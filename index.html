@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>멘헤라 빌라 새해 떡국</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 요리 페이지 -->
+    <div id="cooking-page" class="container">
+        <h1 class="main-title">멘헤라 빌라 주민 여러분 <br>새해 복 많이 받으세요</h1>
+        
+        <div id="ingredient-stage" class="ingredient-stage">
+            <p id="instructionText">재료를 클릭해 냄비에 넣어주세요!</p>
+            
+            <div id="ingredient-card" class="ingredient-card">
+                <div class="comment-bubble">
+                    <span id="cook-comment"></span>
+                </div>
+                <p id="current-provider" class="provider-text"></p>
+                <div class="img-wrapper">
+                    <img id="current-img" src="" alt="재료">
+                </div>
+                <span id="current-name" class="name-text"></span>
+            </div>
+        </div>
+
+        <div class="pot-container">
+            <div class="steam-container" id="steam">
+                <div class="steam"></div>
+                <div class="steam"></div>
+                <div class="steam"></div>
+            </div>
+            <div class="pot" id="main-pot">
+                <div class="pot-handle left"></div>
+                <div class="pot-handle right"></div>
+                <div class="pot-body">
+                    <div id="soup" class="soup"></div>
+                </div>
+            </div>
+        </div>
+        <h2 id="cooking-status" class="hidden">떡국을 끓이고 있어요! 🍲</h2>
+    </div>
+
+    <!-- 완성 페이지 (처음엔 숨김) -->
+    <div id="result-page" class="container hidden">
+        <h1 class="result-title">떡국 완성!</h1>
+        <div class="final-photo-wrapper">
+            <!-- 완성본 사진 (파일명에 맞게 수정하세요) -->
+            <img src="떡국.jpg" alt="완성된 떡국" class="final-photo">
+        </div>
+        
+        <div class="ingredient-summary">
+            <h3>사용한 재료 목록</h3>
+            <ul id="summary-list">
+                <!-- JS에서 동적으로 채워짐 -->
+            </ul>
+        </div>
+        <button onclick="location.reload()" class="retry-btn">다시 끓이기</button>
+    </div>
+
+    <!-- 오디오 -->
+    <audio id="sound-plop" src="Nature Water Drip 08.mp3"></audio>
+    <audio id="sound-boil" src="Bubbling Cauldron Sound.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
