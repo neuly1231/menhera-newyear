@@ -11,7 +11,9 @@ const ingredients = [
     { provider: "수영", name: "지극히 정상적인 떡국 떡", img: "떡국떡.png", comment: "와! 정상적인떡이다" },
     { provider: "등", name: "망고씨", img: "망고씨.png", comment: "그러니까먹고남은망고씨를넣으시겠다고요?망고가아니라망고씨를요?형의아밀레이스가묻어있는망고씨말씀하시는거죠?" },
     { provider: "숙희", name: "취두부", img: "취두부.png", comment: "결국 왔나……" },
-    { provider: "도기", name: "투썸 아이스박스", img: "아박.png", comment: "달콤해지겠네요……" }
+    { provider: "도기", name: "투썸 아이스박스", img: "아박.png", comment: "달콤해지겠네요……" },
+    { provider: "죽순", name: "민트초코라면", img: "민초라면.png", comment: "속이 안 좋아졌어요" },
+    { provider: "희정 (2트)", name: "기린", img: "기린.png", comment: "이 황당함을 이루 말할 수가 없다" }
 
 ];
 
@@ -93,5 +95,6 @@ function goToResultPage() {
         summaryList.appendChild(li);
     });
 }
+
 
 loadIngredient();
